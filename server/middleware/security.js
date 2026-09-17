@@ -14,7 +14,9 @@ export const setupSecurity = (app) => {
   // CORS
   const allowedOrigins = [
     'http://localhost:5173',
-    'https://salmon-albatross-431725.hostingersite.com'
+    'https://salmon-albatross-431725.hostingersite.com',
+    'https://hexindiafasteners.com',
+    'https://www.hexindiafasteners.com'
   ];
   if (process.env.CLIENT_URL && !allowedOrigins.includes(process.env.CLIENT_URL)) {
     allowedOrigins.push(process.env.CLIENT_URL);
